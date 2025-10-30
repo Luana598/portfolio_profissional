@@ -16,9 +16,9 @@
     <header>
         <h1>Portfólio Profissional</h1>
         <div class="cabecalho">
-            <p>Habilidades</p>
-            <p>Projetos</p>
-            <p>Contato</p>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </div>
     </header>
     <main>
@@ -26,21 +26,24 @@
             <section>
                 <div class="content">
                     <h2>Sobre Mim</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula condimentum orci, sed
-                        dignissim libero luctus sit amet. Suspendisse malesuada sapien at dolor eleifend varius. Etiam
-                        dui nibh, efficitur porta facilisis sed, ultrices tristique sapien. Vestibulum ultrices nibh sit
-                        amet ipsum dapibus dapibus. Aliquam elementum quam dui, quis feugiat nisl ornare nec. Praesent
-                        commodo ex ligula, vel posuere risus vulputate non. Sed feugiat lectus enim, vitae dignissim
-                        nulla interdum et. Phasellus eget lobortis orci.</p>
+                    <p>Sou estudante do curso técnico em Desenvolvimento de Sistemas, apaixonada por tecnologia e por
+                        aprender coisas novas. Desde o início da minha formação, venho desenvolvendo projetos práticos
+                        em programação, banco de dados e desenvolvimento web, sempre buscando entender como a tecnologia
+                        pode facilitar o dia a dia das pessoas e melhorar processos dentro de uma empresa.
+
+                        Tenho conhecimentos em HTML, CSS, JavaScript, Java e MySQL, além de experiência com ferramentas
+                        como Git e VS Code. Também concluí cursos de Informática Intermediária e Microsoft Office, o que
+                        me dá segurança para lidar com tarefas administrativas e digitais.</p>
                 </div>
             </section>
             <section>
                 <div class="landingContent">
-                    <h1>Olá! eu sou Luana, <br>Full Stack Developer</h1>
+                    <img src="./img/profilePicture.jpg" alt="">
+                    <h1>Olá! eu sou Luana, <br> uma desenvolvedora Full Stack</h1>
                 </div>
             </section>
         </div>
-        <div class="habilidades">
+        <div class="habilidades" id="habilidades">
             <h1>Hard Skills</h1>
             <div class="skills">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
@@ -54,25 +57,60 @@
                     alt="MySQL">
             </div>
         </div>
-        <div class="projetos">
+        <hr>
+        <div class="projetos" id="projetos">
             <h1>Projetos</h1>
-            <div class="projectCard">
-                <img src="" alt="">
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula condimentum orci, sed
-                    dignissim libero luctus sit amet. Suspendisse malesuada sapien at dolor eleifend varius. Etiam
-                    dui nibh, efficitur porta facilisis sed, ultrices tristique sapien. </p>
+            <div class="cards">
+                <div class="projectCard">
+                    <h2>Potter.Search</h2>
+                    <img src="./img/HP.preview.png" alt="">
+                    <p>Potter.Search é um projeto que consome a API pública PotterDB, exibindo informações sobre livros
+                        e filmes do universo Harry Potter. Desenvolvido com HTML5, CSS3 e JavaScript, utiliza
+                        manipulação do DOM e consumo de API para gerar conteúdo dinâmico. O site apresenta listas de
+                        livros e filmes, e permite visualizar detalhes como capa, resumo, autor, diretores e links
+                        externos.</p>
+                    <button
+                        onclick="window.open('https://github.com/Luana598/Potter-API', '_blank')">Ver
+                        Mais
+                    </button>
+                </div>
+                <div class="projectCard">
+                    <h2>Whatsapp API</h2>
+                    <img src="./img/whatsAPI.jpg" alt="">
+                    <p>Whatsapp API é um projeto desenvolvido em Node.js com Express.js, que fornece uma API para
+                        acessar dados de conversas armazenados localmente. Ela disponibiliza rotas para listar conversas
+                        e filtrar mensagens por palavra-chave, facilitando o acesso e a análise das informações.</p>
+                    <button
+                        onclick="window.open('https://github.com/Luana598/API---Whatsapp', '_blank')">Ver
+                        Mais
+                    </button>
+                </div>
             </div>
-            <div class="projectCard">
-            <img src="" alt="">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula condimentum orci, sed
-                dignissim libero luctus sit amet. Suspendisse malesuada sapien at dolor eleifend varius. Etiam
-                dui nibh, efficitur porta facilisis sed, ultrices tristique sapien. </p>
-        </div>
         </div>
     </main>
-    <footer></footer>
+    <hr>
+    <footer id="contato">
+        <h1>Contato</h1>
+        <div class="social-icons">
+            <div class="email">
+                <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="Gmail">
+                <p>marianaluana598@gmail.com</p>
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <a href="https://github.com/Luana598" target="_blank" rel="noopener noreferrer">
+                    <p>github</p>
+                </a>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                    alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/luana-bomfim-a78a1b30b/" target="_blank" rel="noopener noreferrer">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+        </div>
+        <div class="assinatura">
+            <p>desenvolvido por Luana M. Lopes Bomfim | 2025</p>
+        </div>
+    </footer>
 </body>
 
 </html>
